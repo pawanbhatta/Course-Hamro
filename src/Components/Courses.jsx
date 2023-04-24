@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Flex,
   Grid,
   HStack,
   Image,
@@ -28,10 +29,9 @@ export const Courses = () => {
     <VStack
       mt={"100px"}
       className={`${styles.paddingX} w-full flex items-center justify-between bg-primary relative`}
-      px={"150px"}
       gap={"60px"}
     >
-      <HStack className="w-[100%] items-center justify-between">
+      <Flex className="w-[100%] flex-col md:flex-row items-center justify-between">
         <Text className={`${styles.sectionHeadText} text-white`}>
           Popular <span className="text-[#915eff]"> Courses </span>
         </Text>
@@ -51,7 +51,7 @@ export const Courses = () => {
               return (
                 <Box
                   cursor={"pointer"}
-                  p={"20px 20px"}
+                  p={"1em 20px"}
                   key={index}
                   display={"flex"}
                   bg={item.selected ? "#7F56D9" : "none "}
@@ -71,9 +71,14 @@ export const Courses = () => {
             })}
           </HStack>
         </Box>
-      </HStack>
+      </Flex>
 
-      <Grid mt={"100px"} w={"100%"} templateColumns="repeat(3, 1fr)" gap={15}>
+      <Grid
+        mt={"100px"}
+        w={"100%"}
+        templateColumns="repeat(auto-fit, minmax(calc(200px + 9vw), 1fr))"
+        gap={15}
+      >
         {courses.map((course, index) => (
           <Course key={index} course={course} />
         ))}

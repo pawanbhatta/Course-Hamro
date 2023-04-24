@@ -17,8 +17,7 @@ const Hero = () => {
   return (
     <HStack
       mt={"10px"}
-      className={`w-full flex items-center justify-between bg-primary relative`}
-      px={["10vw"]}
+      className={`${styles.paddingX} w-full flex items-center justify-between bg-primary relative`}
     >
       <VStack w={"100%"} gap={50} flex="10">
         <HStack alignItems={"flex-start"}>
