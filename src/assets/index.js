@@ -34,3 +34,4 @@ export { default as Users } from "./Users.svg";
 export { default as PhoneIcon } from "./PhoneIcon.svg";
 export { default as MsgIcon } from "./MsgIcon.svg";
 export { default as LocationIcon } from "./LocationIcon.svg";
+export { default as DotsPNG } from "./Dots.png";

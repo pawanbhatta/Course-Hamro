@@ -1,4 +1,4 @@
-import { Box, Grid, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Text, VStack } from "@chakra-ui/react";
 import { styles } from "../styles";
 import { categories } from "../constants";
 import { Category } from "./Category";
@@ -8,7 +8,6 @@ function Categories() {
     <VStack
       mt={"500px"}
       className={`${styles.paddingX} flex items-center justify-between relative`}
-      px={"150px"}
       gap={"60px"}
       w={"100%"}
     >
@@ -24,11 +23,11 @@ function Categories() {
         </Text>
       </Box>
 
-      <Grid mt={"100px"} w={"100%"} templateColumns="repeat(4, 1fr)" gap={15}>
+      <Flex mt={"100px"} w={"100%"} gap={15} wrap={"wrap"} justify={"center"}>
         {categories.map((category, index) => (
           <Category key={index} category={category} />
         ))}
-      </Grid>
+      </Flex>
     </VStack>
   );
 }

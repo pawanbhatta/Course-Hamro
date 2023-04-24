@@ -1,6 +1,15 @@
-import { Button, Flex, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import {
+  Button,
+  Flex,
+  HStack,
+  Image,
+  Text,
+  VStack,
+  Stack,
+  Link,
+} from "@chakra-ui/react";
 import { styles } from "../styles";
-import { Link } from "react-router-dom";
+import { Link as NavLink } from "react-router-dom";
 import { LocationIcon, MsgIcon, PhoneIcon, logo } from "../assets";
 import {
   FaBehance,
@@ -12,7 +21,7 @@ import {
 
 function Footer() {
   return (
-    <VStack
+    <Stack
       mt={"500px"}
       className={`${styles.paddingX} flex items-center justify-between relative`}
       px={"150px"}
@@ -21,7 +30,11 @@ function Footer() {
       gap={30}
       w={"100%"}
     >
-      <HStack alignItems={"center"} justifyContent={"space-between"} gap={60}>
+      <Flex
+        className="flex-col md:flex-row items-start"
+        justifyContent={"space-between"}
+        gap={60}
+      >
         <VStack
           alignItems={"flex-start"}
           justifyContent={"center"}
@@ -29,16 +42,26 @@ function Footer() {
           gap={10}
         >
           <Link
-            className="mt-5"
+            as={NavLink}
             to={"/"}
             onClick={() => {
               window.scrollTo(0, 0);
             }}
+            height={"2em"}
           >
-            <img src={logo} alt="logo" className="w-30 h-20  object-cover" />
+            <img
+              src={logo}
+              alt="logo"
+              className="w-auto h-full object-contain"
+            />
           </Link>
 
-          <Text color={"#B0B0D1"} fontSize={"16px"} fontWeight={400}>
+          <Text
+            color={"#B0B0D1"}
+            fontSize={"16px"}
+            fontWeight={400}
+            noOfLines={5}
+          >
             Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat. Duis aute irure dolor in reprehenderit in
             voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -148,7 +171,7 @@ function Footer() {
             Koteswor - 30 | Kathmandu | Nepal | 44600
           </Text>
         </Flex>
-      </HStack>
+      </Flex>
 
       <HStack
         border={"1px solid rgba(218, 218, 247, 0.32)"}
@@ -203,7 +226,7 @@ function Footer() {
           ></Button>
         </HStack>
       </HStack>
-    </VStack>
+    </Stack>
   );
 }
 
