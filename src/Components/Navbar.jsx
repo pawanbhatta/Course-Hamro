@@ -26,7 +26,6 @@ const Navbar = () => {
           </Link>
         </Flex>
 
-        <img src={navVertical} alt="logo" width={"60px"} />
         <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
           {navLinks.map((link) => (
             <li

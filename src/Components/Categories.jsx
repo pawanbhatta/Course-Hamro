@@ -19,7 +19,7 @@ function Categories() {
         w={"100%"}
       >
         <Text className={`${styles.sectionHeadText} text-white`}>
-          Most Popular <span className="text-[#915eff]"> Category </span>
+          Most Popular <span className="text-[#915eff]"> Courses </span>
         </Text>
       </Box>
 
