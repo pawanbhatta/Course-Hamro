@@ -76,9 +76,7 @@ const Works = () => {
               fontSize={"16px"}
               fontWeight={500}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. ex ea
-              commodo consequat.
+              Hamrocourse stands out due to its affordable pricing, comprehensive curriculum, flexible learning options, supportive community, and Nepali-centric approach. These unique features make it an ideal choice for Nepali students seeking quality education in coding and other relevant topics.
             </Text>
             <Text
               w={"100%"}
@@ -88,7 +86,7 @@ const Works = () => {
               fontWeight={500}
               pt={40}
             >
-              ut labore et dolore magna aliqua. ex ea commodo consequat.
+  In addition, Hamrocourse has a dedicated team of experienced instructors who provide personalized attention and support, helping students develop coding skills and reach their full potential. Combined with its unique features, Hamrocourse is an excellent choice for anyone looking to learn coding and related skills online.
             </Text>
 
             <HStack

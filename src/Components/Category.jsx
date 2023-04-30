@@ -19,9 +19,9 @@ export const Category = ({ category }) => {
         <Text>{category.name} </Text>
       </HStack>
 
-      <Box bg={"#7F56D9"} m={5} p={5} borderRadius={5}>
+      <Box bg={"#7F56D9"} m={5} p={5} borderRadius={8}>
         <Image
-          className="rounded-full h-[20px] w-[20px] cursor-pointer"
+          className="rounded-full h-[15px] w-[15px] cursor-pointer"
           src={ArrowUpRight}
           alt=""
         />{" "}

@@ -23,7 +23,7 @@ function Categories() {
         </Text>
       </Box>
 
-      <Flex mt={"100px"} w={"100%"} gap={15} wrap={"wrap"} justify={"center"}>
+      <Flex mt={"100px"} w={"100%"} gap={10} wrap={"wrap"} justify={"center"}>
         {categories.map((category, index) => (
           <Category key={index} category={category} />
         ))}
