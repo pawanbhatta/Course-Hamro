@@ -98,9 +98,10 @@ const Works = () => {
               justifyContent={"space-between"}
               className="@container"
             >
-              {info.map((data) => {
+              {info.map((data, index) => {
                 return (
                   <chakra.div
+                    key={index}
                     gap={10}
                     className="flex flex-col @md:flex-row items-center"
                   >
