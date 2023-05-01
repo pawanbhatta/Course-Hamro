@@ -106,7 +106,7 @@ export const Courses = () => {
       />
       <Image
         position="absolute"
-        bottom={-220}
+        bottom={-215}
         right={0}
         transform={"translate(50%, -50%) rotate(-45deg)"}
         overflow="hidden"
