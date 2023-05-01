@@ -18,6 +18,10 @@ const Hero = () => {
     <HStack
       mt={"10px"}
       className={`${styles.paddingX} w-full flex items-center justify-between bg-primary relative`}
+      bg={"radial-gradient(circle at right, #3D5CFFAA 0, #0000 50%)"}
+      bgSize={"25% 70%"}
+      bgRepeat={"no-repeat"}
+      backgroundPosition={"right"}
     >
       <VStack w={"100%"} gap={50} flex="10">
         <HStack alignItems={"flex-start"}>
