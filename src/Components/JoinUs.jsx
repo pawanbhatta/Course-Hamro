@@ -6,11 +6,13 @@ const JoinUs = () => {
   return (
     <chakra.div
       className={`${styles.paddingX} w-full flex items-center flex-col md:flex-row justify-between relative`}
-      bgColor="rgba(55, 38, 93, 0.43)"
       gap="20"
       bg={`url(${DotsPNG}),url(${DotsPNG})`}
       bgRepeat="no-repeat,no-repeat"
       bgPos="-100px center, calc(100% + 100px) center"
+      bgColor="rgba(55, 38, 93, 0.43)"
+      px={"200px"}
+      py={"80px"}
     >
       <VStack w={"60%"} justifyContent={"flex-start"}>
         <Text

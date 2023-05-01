@@ -25,10 +25,6 @@ const Hero = () => {
     >
       <VStack w={"100%"} gap={50} flex="10">
         <HStack alignItems={"flex-start"}>
-          {/* <Box className="flex flex-col justify-center items-center mt-5">
-            <Box className="w-5 h-5 rounded-full bg-[#915eff]" />
-            <Box className="w-1 sm:h-80 h-40 violet-gradient" />
-          </Box> */}
           <VStack
             className={`${styles.heroHeadText} text-white`}
             fontSize="clamp(1.875rem, 1.0526rem + 3.2895vw, 5rem)"
@@ -42,34 +38,36 @@ const Hero = () => {
             <Text m={0} p="0" noOfLines={1} w="max-content">
               waiting to enrich{" "}
             </Text>
-            <HStack
-              m={0}
-              p="0"
-              noOfLines={1}
-              w="max-content"
-              justify={"space-between"}
-              gap="1em"
-            >
-              <Text m={0} p="0" noOfLines={1} w="max-content">
+            <HStack m={0} p="0" noOfLines={1} w="max-content" gap="1em">
+              <Text
+                m={0}
+                p="0"
+                noOfLines={1}
+                w="max-content"
+                display={"flex"}
+                alignItems={"center"}
+                justifyContent={"space-between"}
+                gap={"3rem"}
+              >
                 your skill{" "}
+                <HStack gap={"1rem"}>
+                  <Image
+                    src={PlusSign}
+                    alt="heroImage"
+                    className="bg-cover bg-no-repeat w-[50px] h-12 aspect-square"
+                  />
+                  <Image
+                    src={PlusSign}
+                    alt="heroImage"
+                    className="bg-cover bg-no-repeat w-[50px] h-12 aspect-square"
+                  />
+                  <Image
+                    src={PlusSign}
+                    alt="heroImage"
+                    className="bg-cover bg-no-repeat w-[50px] h-12 aspect-square"
+                  />
+                </HStack>
               </Text>
-              <HStack>
-                <Image
-                  src={PlusSign}
-                  alt="heroImage"
-                  className="bg-cover bg-no-repeat w-[50px] h-12 aspect-square"
-                />
-                <Image
-                  src={PlusSign}
-                  alt="heroImage"
-                  className="bg-cover bg-no-repeat w-[50px] h-12 aspect-square"
-                />
-                <Image
-                  src={PlusSign}
-                  alt="heroImage"
-                  className="bg-cover bg-no-repeat w-[50px] h-12 aspect-square"
-                />
-              </HStack>
             </HStack>
             <chakra.p className={`${styles.heroSubText} mt-2 text-white-100`}>
               Provides you with the latest online learning system and material

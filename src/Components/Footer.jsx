@@ -62,9 +62,7 @@ function Footer() {
             fontWeight={400}
             noOfLines={5}
           >
-            Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+           Hamrocourse is an online learning platform that provides comprehensive coding education to Nepali students.
           </Text>
         </VStack>
 
@@ -115,7 +113,7 @@ function Footer() {
           p={5}
           gap={20}
         >
-          <Text fontWeight={700} fontSize={"18px"}>
+          <Text fontWeight={700} fontSize={"16px"}>
             Contact Us
           </Text>
 
@@ -129,7 +127,7 @@ function Footer() {
               <Image
                 className="rounded-full h-[20px] w-[20px] cursor-pointer"
                 src={PhoneIcon}
-                alt=""
+                alt="phone number"
               />
               <Text fontWeight={500} fontSize={"16px"} color={"#B0B0D1"}>
                 +977 986 560 6077
@@ -145,10 +143,10 @@ function Footer() {
               <Image
                 className="rounded-full h-[20px] w-[20px] cursor-pointer"
                 src={MsgIcon}
-                alt=""
+                alt="email"
               />
               <Text fontWeight={500} fontSize={"16px"} color={"#B0B0D1"}>
-                hamrocourse101@gmail.com
+                info@hamrocourse.com
               </Text>
             </HStack>
           </VStack>
@@ -159,7 +157,7 @@ function Footer() {
           justifyContent={"center"}
           p={5}
           gap={20}
-          w={"50%"}
+          w={"100%"}
         >
           <Image
             className="rounded-full h-[20px] w-[20px] cursor-pointer"
@@ -168,7 +166,7 @@ function Footer() {
           />
 
           <Text fontWeight={500} fontSize={"16px"} color={"#B0B0D1"}>
-            Koteswor - 30 | Kathmandu | Nepal | 44600
+          Koteshwor , Kathmandu 
           </Text>
         </Flex>
       </Flex>
