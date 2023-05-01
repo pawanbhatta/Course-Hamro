@@ -10,6 +10,8 @@ function Categories() {
       className={`${styles.paddingX} flex items-center justify-between relative`}
       gap={"60px"}
       w={"100%"}
+      bgColor="rgba(55, 38, 93, 0.43)"
+      pb={"80px"}
     >
       <Box
         mt={"100px"}

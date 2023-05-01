@@ -34,18 +34,36 @@ const Hero = () => {
             <Text m={0} p="0" noOfLines={1} w="max-content">
               waiting to enrich{" "}
             </Text>
-            <HStack
-              m={0}
-              p="0"
-              noOfLines={1}
-              w="max-content"
-              justify={"space-between"}
-              gap="1em"
-            >
-              <Text m={0} p="0" noOfLines={1} w="max-content">
+            <HStack m={0} p="0" noOfLines={1} w="max-content" gap="1em">
+              <Text
+                m={0}
+                p="0"
+                noOfLines={1}
+                w="max-content"
+                display={"flex"}
+                alignItems={"center"}
+                justifyContent={"space-between"}
+                gap={"3rem"}
+              >
                 your skill{" "}
+                <HStack gap={"1rem"}>
+                  <Image
+                    src={PlusSign}
+                    alt="heroImage"
+                    className="bg-cover bg-no-repeat w-[50px] h-12 aspect-square"
+                  />
+                  <Image
+                    src={PlusSign}
+                    alt="heroImage"
+                    className="bg-cover bg-no-repeat w-[50px] h-12 aspect-square"
+                  />
+                  <Image
+                    src={PlusSign}
+                    alt="heroImage"
+                    className="bg-cover bg-no-repeat w-[50px] h-12 aspect-square"
+                  />
+                </HStack>
               </Text>
-          
             </HStack>
             <chakra.p className={`${styles.heroSubText} mt-2 text-white-100`}>
               Provides you with the latest online learning system and material

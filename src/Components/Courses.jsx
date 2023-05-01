@@ -98,7 +98,7 @@ export const Courses = () => {
       <Image
         position={"absolute"}
         left={-60}
-        bottom={-150}
+        bottom={-100}
         h={"200px"}
         w={"450px"}
         src={SideDesign}
@@ -106,7 +106,7 @@ export const Courses = () => {
       />
       <Image
         position="absolute"
-        bottom={-250}
+        bottom={-220}
         right={0}
         transform={"translate(50%, -50%) rotate(-45deg)"}
         overflow="hidden"
